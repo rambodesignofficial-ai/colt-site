@@ -81,11 +81,8 @@ nav a {
   text-decoration: none;
   color: #111;
   font-weight: 400;
-  transition: 0.2s;
-}
-nav a:hover {
-  color: #555;
-}
+  transition: 0.
+
 
 /* MENU TOGGLE FOR MOBILE */
 .menu-toggle {
