@@ -61,34 +61,6 @@ body {
   background: #eee;
 }
 
-/* LOADING SCREEN */
-.loading-screen {
-  background: #0b0b0b;
-  color: white;
-}
-.loader-box {
-  width: 320px;
-  text-align: center;
-}
-.loader-bar {
-  height: 4px;
-  background: #222;
-  margin-bottom: 20px;
-  border-radius: 2px;
-  overflow: hidden;
-}
-.loader-bar span {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: white;
-  transition: width 0.2s;
-}
-#factText {
-  font-size: 16px;
-  color: #ccc;
-}
-
 /* HEADER */
 .header {
   position: fixed;
@@ -113,6 +85,25 @@ nav a {
 }
 nav a:hover {
   color: #555;
+}
+
+/* MENU TOGGLE FOR MOBILE */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+.nav-menu li {
+  margin-left: 30px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
 }
 
 /* HERO */
@@ -155,7 +146,7 @@ nav a:hover {
   text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
 }
 
-/* SECTION */
+/* SECTIES */
 .section {
   padding: 120px 80px;
   background: white;
@@ -168,54 +159,8 @@ nav a:hover {
   font-size: 36px;
   margin-bottom: 30px;
 }
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-.bullet-clean li {
-  margin: 10px 0;
-}
 
-/* TWO-COL IMAGE */
-.two-col img {
-  max-width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.4s ease-out;
-}
-
-/* ENGINEERING */
-.engineering-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-.tech-list li {
-  margin: 8px 0;
-}
-.engineering-image {
-  position: relative;
-}
-.engineering-image img {
-  max-width: 100%;
-  max-height: 350px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.4s ease-out;
-}
-.engineering-image .caption {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 12px;
-  color: #aaa;
-}
-
-/* COST GRID */
+/* KOSTEN SECTION */
 .cost-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -227,82 +172,13 @@ nav a:hover {
   border-radius: 6px;
 }
 
-/* COMPARE */
-.compare-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-.compare-card {
-  background: rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  border-radius: 6px;
-}
-
-/* GAME */
-.game-box {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.game-box input {
-  width: 300px;
-  margin-bottom: 10px;
-}
-.game-result {
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-/* DETAIL SECTION */
-.detail {
-  position: relative;
-  margin-top: 60px;
-}
-.detail img {
-  max-width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.4s ease-out;
-}
-.detail-text {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 8px 12px;
-  border-radius: 4px;
-}
-
-/* FOOTER */
-footer {
-  padding: 40px;
-  text-align: center;
-  background: #000;
-  color: #777;
-}
-
-/* REVEAL ANIMATION */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .two-col {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .engineering-layout {
+  .cost-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -315,5 +191,25 @@ footer {
   }
   .hero-overlay p {
     font-size: 18px;
+  }
+  /* Menu aanpassen voor mobiel */
+  .menu-toggle {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+  }
+  .nav-menu.active {
+    display: flex;
   }
 }
