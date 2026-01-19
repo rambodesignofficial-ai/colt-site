@@ -148,12 +148,11 @@ nav a:hover {
   font-size: 64px;
   font-weight: 700;
   color: black;
-  background-color: white;
 }
 .hero-overlay p {
   font-size: 24px;
   color: black;
-  background-color: white;
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
 }
 
 /* SECTION */
@@ -296,13 +295,6 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-.hero img {
-  max-width: 90%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-  transition: transform 0.4s ease-out;
-}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -323,10 +315,5 @@ footer {
   }
   .hero-overlay p {
     font-size: 18px;
-  }
-
-  /* Adjust the size of the game */
-  .game-box input {
-    width: 80%;
   }
 }
