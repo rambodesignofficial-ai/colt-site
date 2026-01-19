@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitsubishi Colt Z30</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+
+<!-- 1️⃣ START SCHERM -->
+<div id="startScreen" class="fullscreen start-screen">
+  <h1>MITSUBISHI COLT Z30</h1>
+  <p class="intro-text">
+    Duik in de wereld van de Mitsubishi Colt 2002–2008.<br>
+    Alles over techniek, kosten, tuning en plezier.
+  </p>
+  <span class="credit">Gemaakt door <strong>Rambo</strong></span>
+  <button id="startBtn">START</button>
+</div>
+
+<!-- 2️⃣ LOADING SCHERM -->
+<div id="loadingScreen" class="fullscreen loading-screen hidden">
+  <div class="loader-box">
+    <div class="loader-bar">
+      <span id="loaderProgress"></span>
+    </div>
+    <p id="factText">Even laden…</p>
+  </div>
+</div>
+
+<!-- 3️⃣ WEBSITE -->
+<div id="site" class="hidden">
+
+<header class="header">
+  <div class="logo">MITSUBISHI COLT 2002-2008</span></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#engineering">Engineering</a>
+    <a href="#costs">Costs</a>
+    <a href="#compare">1.3 vs 1.5</a>
+    <a href="#game">Build</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="images/colt-detail.jpg" alt="Colt hero">
+  <div class="hero-overlay">
+    <h1>COLT Z30</h1>
+    <p>Built before shortcuts</p>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <div class="two-col">
+    <div>
+      <h2>Waarom de Colt Z30 bijzonder is</h2>
+      <p class="lead">
+        De Colt Z30 is licht, mechanisch eerlijk en gebouwd in een tijd
+        waarin betrouwbaarheid belangrijker was dan elektronica.
+      </p>
+      <ul class="bullet-clean">
+        <li>±1050 kg</li>
+        <li>Atmosferisch (NA)</li>
+        <li>Geen turbo, geen directe injectie</li>
+        <li>Perfect als daily of project</li>
+      </ul>
+    </div>
+    <img src="images/colt-front.jpg" alt="Colt front">
+  </div>
+</section>
+
+<section id="engineering" class="section dark reveal">
+  <h2>Engineering & Mechanica</h2>
+  <div class="engineering-layout">
+    <div>
+      <h3>4G13 / 4G15 MIVEC</h3>
+      <p>
+        Simpele atmosferische motoren zonder overbelasting.
+        Lage temperaturen, weinig slijtage, lange levensduur.
+      </p>
+      <ul class="tech-list">
+        <li>Ketting i.p.v. distributieriem</li>
+        <li>250.000–300.000 km levensduur</li>
+        <li>Remap-vriendelijk</li>
+      </ul>
+    </div>
+    <div class="engineering-image">
+      <img src="images/colt-engine.jpg" alt="Engine bay">
+      <span class="caption">Engine bewust klein & technisch</span>
+    </div>
+  </div>
+</section>
+
+<section id="costs" class="section reveal">
+  <h2>Kosten (NL)</h2>
+  <div class="cost-grid">
+    <div class="cost-card">
+      <h3>Vast</h3>
+      <ul>
+        <li>Belasting: ± €35 / mnd</li>
+        <li>Verzekering: €30–50</li>
+        <li>Brandstof: ± €120</li>
+      </ul>
+    </div>
+    <div class="cost-card">
+      <h3>Onderhoud</h3>
+      <ul>
+        <li>Kleine beurt: €200</li>
+        <li>Grote beurt: €500</li>
+        <li>Koppeling: €700</li>
+      </ul>
+    </div>
+    <div class="cost-card">
+      <h3>Getuned</h3>
+      <ul>
+        <li>Meer bandenslijtage</li>
+        <li>Remupgrade: €400</li>
+        <li>Stage 1 clutch</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="section dark reveal">
+  <h2>1.3 vs 1.5</h2>
+  <div class="compare-grid">
+    <div class="compare-card">
+      <h3>1.3</h3>
+      <ul>
+        <li>95 PK</li>
+        <li>Zuiniger</li>
+        <li>Goedkoper</li>
+      </ul>
+    </div>
+    <div class="compare-card">
+      <h3>1.5</h3>
+      <ul>
+        <li>109 PK</li>
+        <li>Meer koppel</li>
+        <li>Betere tuningbasis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="game" class="section reveal">
+  <h2>Price Classes Of Your Colt</h2>
+  <div class="game-box">
+    <input type="range" min="1500" max="5000" step="100" id="budget">
+    <span id="budgetValue">€1500</span>
+    <div id="gameResult" class="game-result">
+      Stock daily Colt
+    </div>
+  </div>
+</section>
+
+<section class="detail reveal">
+  <img src="images/colt-hero.jpg" alt="Detail">
+  <div class="detail-text">
+    <h2>Mechanical honesty</h2>
+    <p>Never goes out of style</p>
+  </div>
+</section>
+
+<footer>
+  <p>Colt Z30 • Gemaakt door Rambo</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
