@@ -41,10 +41,11 @@ nav a:hover { color:#555; }
 .hero-overlay.active { opacity:1; transform:translateY(0); }
 .hero-overlay h1 {
   font-size:64px; font-weight:700; color:black;
+  background-color: white;
 }
 .hero-overlay p {
   font-size:24px; color:black;
-  text-shadow:1px 1px 0 white,-1px 1px 0 white,1px -1px 0 white,-1px -1px 0 white;
+  background-color: white;
 }
 
 /* SECTION */
