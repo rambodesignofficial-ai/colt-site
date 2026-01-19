@@ -137,11 +137,3 @@ window.addEventListener('load', () => {
     heroOverlay.classList.add('active');
   }, 500); // half seconde delay
 });
-
-// Toggle menu voor mobiel
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
